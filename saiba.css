@@ -1,0 +1,251 @@
+:root {
+	--purple: rgb(156, 85, 173);
+  }
+  
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body,
+  input,
+  textarea,
+  select,
+  button {
+	font: 400 16px 'Roboto', sans-serif;
+	color: rgb(0, 31, 66);
+    background-color: rgb(255, 255, 255); 
+	background-image: linear-gradient(to bottom , rgb(212, 236, 255), rgb(253, 237, 193));
+  }
+
+  H1{
+	padding-top: 20px;
+	text-align: center;
+}
+  
+  .btu-calculator {
+	padding-top: 50px;
+	background-color: rgb(236, 235, 225);
+	border-left: 20px solid blue;
+	width: 500px;
+	margin: 0 auto;
+  }
+  .btu-calculator{
+	margin-top: 50px;
+  }
+  
+  form {
+	
+	width: 100%;
+	max-width: 400px;
+	padding: 0 2rem;
+	margin: 0 auto 2rem;
+  }
+  
+  .input-wrapper {
+	margin-top: 20px;
+	margin-bottom: 1rem;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 0.875rem;
+	font-weight: bold;
+  }
+  
+  select {
+	width: 100%;
+	display: block;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.875rem;
+	border-radius: 3px;
+	outline-width: 1px;
+	outline-style: solid;
+  }
+  
+  select:focus {
+	outline-color: var(--purple);
+	border-color: var(--purple);
+  }
+  
+  .result-content {
+	text-align: center;
+	border-top: 1px solid #fff;
+	padding-top: 2rem;
+  }
+  
+  .result-content h2 {
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+  }
+  
+  .result-content .result {
+	max-width: 500px;
+	margin: 1rem auto;
+	padding: 0 0.5rem;
+	text-align: left;
+	display: flex;
+	justify-content: space-around;
+	
+  }
+  
+  .result-content .title {
+	font-size: 1.25rem;
+	font-weight: bold;
+	display: block;
+	color: var(--purple);
+  }
+  
+  .result-content p {
+	font-size: 0.875rem;
+	margin-bottom: 0.5rem;
+	
+  }
+  
+  .result-content strong {
+	font-size: 1rem;
+	display: block;
+	border:2px solid blue;
+	padding: 10px;
+	border-radius: 5px;
+  }
+
+  h1.redesSociais {
+  
+	display: flex;
+	justify-content: center;
+	margin-top: 200px;
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-decoration: overline ;
+  }
+  
+  ul.redesSociais {
+	padding-left: 0;
+	width: 620px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	margin-top: 10px;
+	margin-left: -310px;
+	margin-bottom: 50px;
+	cursor: pointer;
+  }
+  
+  ul.redesSociais li {
+	list-style-position:inside;
+	display: block;
+	position: absolute;
+	right: 50%;
+	transition: all 500ms;
+  }
+  
+  /*Sem Mouse*/
+  ul.redesSociais li.pinterest {
+	transform: scale(0.5);
+	margin-right: 0px;
+	z-index:0;
+  }
+  ul.redesSociais li.facebook {
+	transform: scale(0.6);
+	margin-right: -19px;
+	z-index:1;
+  }
+  ul.redesSociais li.twitter {
+	transform: scale(0.8);
+	margin-right: -50px;
+	z-index:2;
+  }
+  ul.redesSociais li.googleplus {
+	transform: scale(0.6);
+	margin-right: -74px;
+	z-index:1;
+  }
+  ul.redesSociais li.skype {
+	transform: scale(0.5);
+	margin-right: -95px;
+	z-index:0;
+  }
+  
+  /*Com Mouse*/
+  ul.redesSociais:hover li.pinterest {
+	margin-right: 290px;
+  }
+  ul.redesSociais:hover li.facebook {
+	margin-right: 100px;
+  }
+  ul.redesSociais:hover li.twitter {
+	margin-right: -50px;
+  }
+  ul.redesSociais:hover li.googleplus {
+	margin-right: -200px;
+  }
+  ul.redesSociais:hover li.skype {
+	 margin-right: -390px;
+  }
+
+  /* responsive mobile*/
+@media (max-width: 768px){
+
+
+	H1{
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	.btu-calculator {
+		padding-top: 25px;
+		background-color: rgb(236, 235, 225);
+		border-left: 20px solid blue;
+		width: 290px;
+		margin: 0 auto;
+	  }
+	  .btu-calculator{
+		margin-top: 50px;
+	  }
+
+
+	  ul.redesSociais {
+		padding-left: 0;
+		width: 200px;
+		height: 50px;
+		position: relative;
+		left: 40%;
+		margin-top: 10px;
+		margin-left: -70px;
+		margin-bottom: 50px;
+		cursor: pointer;
+	  }
+	  
+	  /*Sem Mouse*/
+	  ul.redesSociais li.pinterest {
+	  transform: scale(0.5);
+	  margin-right: 100px;
+	  z-index:0;
+	  }
+	  ul.redesSociais li.facebook {
+	  transform: scale(0.5);
+	  margin-right: 25px;
+	  z-index:1;
+	  }
+	  ul.redesSociais li.twitter {
+	  transform: scale(0.5);
+	  margin-right: -50px;
+	  z-index:2;
+	  }
+	  ul.redesSociais li.googleplus {
+	  transform: scale(0.5);
+	  margin-right: -120px;
+	  z-index:1;
+	  }
+	  ul.redesSociais li.skype {
+	  transform: scale(0.5);
+	  margin-right: -190px;
+	  z-index:0;
+	  }
+}

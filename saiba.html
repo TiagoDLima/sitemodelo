@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BTU calculator</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="saiba.css" />
+</head>
+
+<body>
+  <main>
+    <h1>Calculadora BTU</h1>
+    <div class="btu-calculator">
+      <div class="content">
+        <form id="form-btu">
+          <div class="input-wrapper">
+            <label for="meter">Quantos m2 o ambiente possui?</label>
+            <select name="meter">
+              <option value="4">4</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+            </select>
+          </div>
+          <div class="input-wrapper">
+            <label for="people">Quantas pessoas ocupam o local?</label>
+            <select name="people">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="input-wrapper">
+            <label for="window">Quantas janelas o ambiente possui?</label>
+            <select name="window">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+          <div class="input-wrapper">
+            <label for="appliance">Quantos eletrodomésticos em funcionamento?</label>
+            <select name="appliance">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="15">10+</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="result-content">
+        <h2>Resultado:</h2>
+        <span class="result">---</span>
+      </div>
+    </div>
+    <!-- botão flutuante whatsapp -->
+<a href="https://api.whatsapp.com/send?phone=51000000000&text=olá" class="whatsapp-button" target="_blank" style="position: fixed;  right: 15px; bottom: 180px;">
+  <img src="https://i.ibb.co/VgSspjY/whatsapp-button.png" alt="botão whatsapp">
+</a>
+  </main>
+  <Footer>
+    <h1 class="redesSociais">- Redes Sociais -</h1>
+    <ul class="redesSociais" >
+        <li class="pinterest"><a href="https://www.pinterest.com/" target="_blank"><img
+                    src="http://i904.photobucket.com/albums/ac243/guilhermehebert/pinterest.png" alt="" /></a></li>
+        <li class="facebook"><a href="https://www.facebook.com/" target="_blank"><img
+                    src="http://i904.photobucket.com/albums/ac243/guilhermehebert/fb.png" alt="" /></a></li>
+        <li class="twitter"><a href="https://www.twitter.com/" target="_blank"><img
+                    src="http://i904.photobucket.com/albums/ac243/guilhermehebert/twitter.png" alt="" /></a></li>
+        <li class="googleplus"><a href="https://www.plus.google.com/" target="_blank"><img
+                    src="http://i904.photobucket.com/albums/ac243/guilhermehebert/google.png" alt="" /></a></li>
+        <li class="skype"><a href="https://www.skype.com/" target="_blank"><img
+                    src="http://i904.photobucket.com/albums/ac243/guilhermehebert/skype.png" alt="" /></a></li>
+    </ul>
+</Footer>
+
+  <script src="btu-calculator.js" defer></script>
+</body>
+
+</html>
